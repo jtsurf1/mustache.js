@@ -1,0 +1,57 @@
+<!doctype html> 
+<html> 
+  <head> 
+  <title>Host Committee Mustache Processor</title> 
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="teststyle.css" />
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="mustache.js"></script>
+ 
+  <script type="text/javascript">
+ 
+var template, data, html;
+var gotTemplate, gotData;
+ 
+function getInvite() {
+ 
+  gotTemplate = gotData = false;
+ 
+  $.get( "testTemplate.mustache", null, function( ajaxData ) {
+    template = ajaxData;
+    gotTemplate = true;
+    if ( gotData ) processTemplate();
+  } ); 
+ 
+  $.getJSON( "testData.txt", null, function( ajaxData ) {
+    data = ajaxData;
+    gotData = true;
+    if ( gotTemplate ) processTemplate();
+  } ); 
+}
+ 
+function processTemplate() {
+  html = Mustache.render( template, data );
+  $('#invite').html( html );
+}
+   
+  </script>
+ 
+  <style>
+ 
+    table { width: 100%; border-spacing: 1px; border: none; }
+    th { text-align: left; background-color: #EFEFD7; color: #000000; font-weight: bold; padding: 4px; }
+    td { text-align: left; background-color: #F7F7E6; color: #000000; font-weight: normal; padding: 4px; }
+    button { margin-bottom: 20px; }
+ 
+  </style>
+ 
+</head> 
+<body> 
+ 
+  <h1>Host Committee Mustache Processor Demo: Invite</h1>
+ 
+  <button onclick="getInvite()">Get Invite</button>
+  <div id="invite"> </div>
+ 
+</body>
+</html>

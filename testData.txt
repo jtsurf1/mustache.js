@@ -1,4 +1,26 @@
 {
-  "name": "Raza",
-  "value": 10000
+	"host_name": "Joseph Shoop",
+	"first_name": "Ken's",
+	"event_name": "Birthday",
+	"event_year": 2012,
+	"event_day": 23,
+	"event_monthyear": "March 2012",
+	"event_time": "6-10",
+	"event_ampm": "PM",
+	"event_openbartime": "6-8",
+	"event_openbarampm": "PM",
+	"event_price": "$20",
+	"event_location": "ROGUE BAR & RESTAURANT",
+	"event_address": "5th Avenue (7th St.)",
+	"host_a": {
+			"first_name":"Rachel",
+			"last_name":"WOODHOUSE",
+			"avatar":"images/images/Copy-of-BH_HC_InviteEmailRY_10.jpg"
+		 },
+	"host_b": {
+			"first_name":"Josephine",
+			"last_name":"SHAW",
+			"avatar":"images/images/Copy-of-BH_HC_InviteEmailRY_07.jpg"
+		 }
+	
 }

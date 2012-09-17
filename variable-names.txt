@@ -14,3 +14,12 @@ event_price
 event_location
 event_address
 event_url
+host_rows
+    host_a
+        first_name
+        last_name
+        avatar
+    host_b
+        first_name
+        last_name
+        avatar

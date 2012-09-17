@@ -1,13 +1,14 @@
-<!doctype html> 
-<html> 
-  <head> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <title>Host Committee Mustache Processor</title> 
   <meta charset="utf-8">
-  <link rel="stylesheet" href="teststyle.css" />
-  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="mustache.js"></script>
- 
-  <script type="text/javascript">
+ <!-- <link rel="stylesheet" href="teststyle.css" />-->
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="mustache.js"></script>
+
+	<script type="text/javascript">
  
 var template, data, html;
 var gotTemplate, gotData;
@@ -35,23 +36,68 @@ function processTemplate() {
 }
    
   </script>
- 
-  <style>
- 
-    table { width: 100%; border-spacing: 1px; border: none; }
-    th { text-align: left; background-color: #EFEFD7; color: #000000; font-weight: bold; padding: 4px; }
-    td { text-align: left; background-color: #F7F7E6; color: #000000; font-weight: normal; padding: 4px; }
-    button { margin-bottom: 20px; }
- 
-  </style>
- 
-</head> 
-<body> 
- 
-  <h1>Host Committee Mustache Processor Demo: Invite</h1>
- 
-  <button onclick="getInvite()">Get Invite</button>
-  <div id="invite"> </div>
- 
+  
+<style type="text/css">
+<!--
+.style3 {font-size: 18px; font-family: Arial, Helvetica, sans-serif;}
+
+td {
+	background-repeat:no-repeat;
+}
+.style4 {font-size: 36px}
+.style5 {font-size: 24px}
+.style7 {
+	color: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.style11 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999999;
+	font-size: 16px;
+	font-weight: bold;
+}
+.style12 {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #333333;
+}
+.style15 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.style18 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #999999;}
+.style20 {
+	color: #CCCCCC;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+a:link {
+	text-decoration: none;
+	color: #CCCCCC;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+</head>
+
+<body onLoad="getInvite()">
+
+
+	<!--Start testTemplate.mustache file-->
+	<div id="invite"> </div>
+	<!--End testTemplate.mustache file-->
+	
+<p>&nbsp;</p>
 </body>
 </html>
